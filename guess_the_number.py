@@ -4,7 +4,6 @@ while True:
     computer_number = random.randint(1, 100)
 
     while True:
-        print(computer_number)
         player_number = input('The computer chose a number between 1 and 100. Try to guess it: ')
 
         if not player_number.isdigit():
@@ -18,6 +17,7 @@ while True:
             print('You nailed it! Congratulations!')
             choice = input('Do you want to play again? Type [y]es or [n]o: ')
             if choice == 'y':
+                print('Here we go!')
                 break
             elif choice == 'n':
                 raise SystemExit('Have a nice day! See you next time!')
